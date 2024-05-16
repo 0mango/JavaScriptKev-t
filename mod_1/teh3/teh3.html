@@ -2,19 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>teh3</title>
 </head>
+<h1 id="sum"></h1>
 <body>
-<p id = 'test'></p>
 <script>
-    const number = prompt(parseInt("give me a year"))
-    let year_id;
-    if (number % 4 == 0){year_id = 'leap year'}
-    else if (number % 100 == 0){year_id = 'leap year'}
-    else if (number % 400 == 0){year_id = 'leap year'}
-    else year_id = ' not leap year'
-    document.getElementById('test').innerHTML= (number + ' is a '+ year_id)
-
+let num = parseInt(prompt('anna numero'))
+let num2 = parseInt(prompt('anna numero'))
+let num3 = parseInt(prompt('anna numero'))
+const sum = ((num+num2+num3)/3)
+document.getElementById("sum").innerHTML = sum
 </script>
 </body>
 </html>

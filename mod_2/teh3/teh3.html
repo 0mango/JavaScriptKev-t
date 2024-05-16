@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teh3</title>
+</head>
+<body>
+<script>
+    dogs = [];
+    name = prompt('dogs name?')
+    dogs.push(name)
+    while (dogs.length !== 6){
+        new_name = prompt('next dog')
+        dogs.push(new_name)
+        dogs.sort()
+        dogs.reverse()
+    }
+    const displayY = dogs.map(i => {return"<li>"+ i +"<li/>"})
+    const ew = '<ul>' + displayY.join('')+ '<ul/>'
+    document.write(ew)
+</script>
+</body>
+</html>

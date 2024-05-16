@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teh2</title>
+</head>
+<body>
+<h1> Tervetuloa </h1>
+<script>
+const kayttajat = []
+const maara = parseInt(prompt("anna numero"))
+henkilo = prompt("anna nimi")
+kayttajat.push(henkilo)
+while (kayttajat.length != maara) {
+    uusi_nimi = prompt('anna toine nimi')
+    kayttajat.push(uusi_nimi)
+    kayttajat.sort()
+}
+
+const display =kayttajat.map(i => {return "<ol> "+i+" </ol>"})
+document.write(display)
+
+</script>
+</body>
+</html>

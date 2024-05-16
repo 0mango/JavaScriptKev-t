@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>teh4</title>
+</head>
+<body>
+<script>
+    numbers = []
+    num= parseInt(prompt('syötä numero'))
+    numbers.push(num)
+    while (num !== 'a'){
+        new_num = parseInt(prompt('syötä uusi numero'))
+        numbers.push(new_num)
+        if (new_num === 0){
+            break
+        }
+
+    }
+
+    console.log(numbers.sort(function (a, b){return b-a}))
+</script>
+</body>
+</html>

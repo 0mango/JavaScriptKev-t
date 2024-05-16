@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<h1> Your House</h1>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    var name = prompt(" Hello dear! What is your name?")
+    let person;
+    person = Math.floor(
+        Math.random()*4)+1;
+    let person_id
+    if(person == 1){person_id = 'Gryffindor'}
+     if (person == 2){person_id = 'Slytherin'}
+     if (person == 3){person_id = 'Hufflepuff'}
+    if (person == 4){person_id = "Ravenclaw"}
+
+    document.getElementById("demo").innerHTML=("Hello " +  name  + " you are a " + person_id)
+
+</script>
+
+</body>
+</html>

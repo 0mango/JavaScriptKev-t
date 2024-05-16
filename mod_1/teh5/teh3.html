@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id = 'test'></p>
+<script>
+    const number = prompt(parseInt("give me a year"))
+    let year_id;
+    if (number % 4 == 0){year_id = 'leap year'}
+    else if (number % 100 == 0){year_id = 'leap year'}
+    else if (number % 400 == 0){year_id = 'leap year'}
+    else year_id = ' not leap year'
+    document.getElementById('test').innerHTML= (number + ' is a '+ year_id)
+
+</script>
+</body>
+</html>
